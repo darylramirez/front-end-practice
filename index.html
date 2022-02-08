@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
+    <script defer src='script.js'></script>
   </head>
 
   <body>
@@ -20,15 +21,15 @@
       </header>
       <div class='all-lists'>
           <h2 class='list-title'>All Lists</h2> 
-          <ul class='individual-list'>
-            <div class='list-actions'>
-                <li class='select-list'><span class='indiv-list'>List 1</span>
+          <ul class='individual-list' data-lists>
+            <!-- <div class='list-actions'> -->
+                <!-- <li class='select-list'><span class='indiv-list'>List 1</span>
                     <button id ='delete-btn' class='material-icons-outlined'>
                         delete
                         </button>
-                </li>
-            </div>
-            <div class='list-actions'>
+                </li>  -->
+             <!-- </div> -->
+           <!-- <div class='list-actions'>
                 <li><span class='indiv-list'>List 2</span>
                     <button id ='delete-btn' class='material-icons-outlined'>
                         delete
@@ -40,11 +41,11 @@
                     <button id ='delete-btn' class='material-icons-outlined'>
                         delete
                         </button>
-                </li>
-            </div>
+                </li> -->
+            <!-- </div> -->
           </ul>  
-          <form class='new-list'>
-              <input class='new-list-input' placeholder='Add a new list...' type='text' name="New List Title"> 
+          <form class='new-list' data-new-list-form>
+              <input data-new-list-input value='' class='new-list-input' placeholder='Add a new list...' type='text' name="New List Title"> 
               <input 
 				type="submit"
                 class="material-icons-outlined"
