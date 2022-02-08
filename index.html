@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To-do list</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+      <header>
+          <h1 class='title'>To Do List</h1>
+      </header>
+      <div class='all-lists'>
+          <h2 class='list-title'>All Lists</h2> 
+          <ul class='individual-list'>
+            <div class='list-actions'>
+                <li class='select-list'><span class='indiv-list'>List 1</span>
+                    <button id ='delete-btn' class='material-icons-outlined'>
+                        delete
+                        </button>
+                </li>
+            </div>
+            <div class='list-actions'>
+                <li><span class='indiv-list'>List 2</span>
+                    <button id ='delete-btn' class='material-icons-outlined'>
+                        delete
+                        </button>
+                </li>
+            </div>
+            <div class='list-actions'>
+                <li><span class='indiv-list'>List 3</span>
+                    <button id ='delete-btn' class='material-icons-outlined'>
+                        delete
+                        </button>
+                </li>
+            </div>
+          </ul>  
+          <form class='new-list'>
+              <input class='new-list-input' placeholder='Add a new list...' type='text' name="New List Title"> 
+              <input 
+				type="submit"
+                class="material-icons-outlined"
+				id="new-list-submit" 
+                value='add'
+                aria-label="Add new list"
+				/>
+          </form> 
+          </div>
+      <div class='task-list-container'>
+          <div class='task-list-header'>
+              <h2 class='task-list-title'>List 1</h2>
+          </div>
+          <div class='task-list-body'>
+            <div class='task-list-elements'>
+                <input type='checkbox' id='task-1'/>
+                <label for='task-1'>
+                    <span class='checkbox'></span>
+                    Task 1</label>
+                    <button id ='edit-btn' class='material-icons-outlined'>
+                        edit
+                        </button>
+                    <button id ='delete-btn' class='material-icons-outlined'>
+                        delete
+                        </button>
+            </div>
+            <div class='task-list-elements'>
+                <input type='checkbox' id='task-2'/>
+                <label for='task-2'>
+                    <span class='checkbox'></span>
+                    Task 2</label>
+                    <button id ='edit-btn' class='material-icons-outlined'>
+                        edit
+                        </button>
+                    <button id ='delete-btn' class='material-icons-outlined'>
+                        delete
+                        </button>
+            </div>
+            <div class='task-list-elements'>
+                <input type='checkbox' id='task-3'/>
+                <label for='task-3'>
+                    <span class='checkbox'></span>
+                    Task 3</label>
+                    <button id ='edit-btn' class='material-icons-outlined'>
+                        edit
+                        </button>
+                    <button id ='delete-btn' class='material-icons-outlined'>
+                        delete
+                        </button>
+            </div>
+            <div class='new-task'>
+                <form class='new-task'>
+                    <input class='new-task-input' placeholder='Add a new task...' type='text' name="New Task Description"> 
+                    <input 
+                      type="submit"
+                      class="material-icons-outlined"
+                      id="new-task-submit" 
+                      value='add'
+                      aria-label="Add new task"
+                      />
+                </form> 
+            </div>
+          </div>
+      </div>
+      </body>
+      </html>

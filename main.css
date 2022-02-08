@@ -1,0 +1,96 @@
+* {
+   margin: 0; 
+	box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+    display: grid;
+    grid: 
+    "header header header header" auto
+    "....lists selected ......"
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-size: 20px;
+}
+
+header {
+	padding: 2rem;
+    text-align: center;
+	align-items: center;
+	/* margin: 0 auto; */
+    /* width: 100%; */
+    font-size: 1.5rem;
+	font-weight: 100;
+	margin-bottom: 1rem;
+    grid-area: header;
+}
+
+
+button {
+	background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin-right: 1rem;
+	font-size: 1rem; 
+}
+
+.new-list{
+    display: flex;;
+}
+
+.new-task{
+    display: flex;
+}
+
+.all-lists{
+grid-area: lists;
+line-height: 3;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 1.1em;
+}
+
+.task-list-container{
+    grid-area: selected;
+    line-height: 2;
+    padding: 1rem;
+}
+
+.task-list-elements{
+font-size: 2rem;
+}
+
+#new-task-submit, #new-list-submit, button, .indiv-list {
+	font-size: 1.25rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit, #new-list-submit, button, .indiv-list:hover {
+	opacity: 0.5;
+}
+
+#new-task-submit, #new-list-submit, button, .select-list :active {
+	opacity: 0.5;
+}
+
+
